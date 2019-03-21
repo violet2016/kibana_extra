@@ -1,0 +1,9 @@
+<div class="test-vis-app app-container" ng-controller="TestVisApp">
+    <div class="test-vis-app-selector">
+        <select
+            ng-options="item.id as item.title for item in visualizationList"
+            ng-model="selectedVisualization"
+        ></select>
+    </div>
+    <div class="test-vis-app-visualize"></div>
+</div>
