@@ -1,0 +1,15 @@
+<div class="app-container">
+    <div ng-controller="discFieldController">
+        <select
+            ng-options="item for
+            item in indexPatterns"
+            ng-model="selectIndex"
+        ></select>
+        <section class="dscTable" fixed-scroll aria-label="Documents">
+            <gpdb-doc-table
+                index-pattern="indexPattern"
+                search-source="searchSource"
+            ></gpdb-doc-table>
+        </section>
+    </div>
+</div>
