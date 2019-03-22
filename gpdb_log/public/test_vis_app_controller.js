@@ -1,3 +1,4 @@
+// the controller of a single page plugin that can load all save dashboard and show the selected one
 import 'ui/visualize';
 import { VisProvider } from 'ui/vis';
 import { getVisualizeLoader } from 'ui/visualize/loader';

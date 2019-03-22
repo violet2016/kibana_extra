@@ -10,7 +10,7 @@ export default function (kibana) {
         description: '6.5.5',
         main: 'plugins/gpdb_log/test_vis_app',
       },
-      docViews: ['plugins/gpdb_log/analyze'],
+      docViews: ['plugins/gpdb_log/analyze'], //point to public/analyze.js
       hacks: [
         'plugins/gpdb_log/hack'
       ],

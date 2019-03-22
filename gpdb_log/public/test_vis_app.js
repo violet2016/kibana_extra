@@ -22,4 +22,7 @@ chrome.setRootTemplate(template);
 * or more contributor license agreements. Licensed under the Elastic License;
 * you may not use this file except in compliance with the Elastic License.
 */
+
+
+// need to add this code! otherwise there is searchstrategy is empty.
 addSearchStrategy(defaultSearchStrategy);

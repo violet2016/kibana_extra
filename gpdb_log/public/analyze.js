@@ -1,3 +1,4 @@
+// This part add a panel to a singe docview component
 import defaultTemplate from './no_template.html';
 
 import { DocViewsRegistryProvider } from 'ui/registry/doc_views';

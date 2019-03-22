@@ -1,3 +1,4 @@
+//由plugin-generator生成
 import React from 'react';
 import { uiModules } from 'ui/modules';
 import chrome from 'ui/chrome';
