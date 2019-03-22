@@ -1,0 +1,13 @@
+入口[index.js](index.js)
+只注册gpdb_discover app
+
+[app.js](public/app.js)是app的入口，注册主页的template以及defaultSearchStrategy。
+
+之后给gpdbDiscover创建一个controller，discFieldController，调用loadIndexPatterns，得到的结果赋值给indexPatterns。watch selectIndex的结果，并把结果赋给indexPattern。
+
+函数定义[index_utils.js](public/util/index_utils.js)
+
+loadIndexPatterns函数：创建kibana提供的SavedObjectsClientProvider的对象，找到es里的index-pattern，然后将返回值里的savedObjects赋值给indexPatternCache并返回。
+selectIndex是注册在ng-options上的ng-model，当选中了一个option时这个值就会改变。然后在template中就可以使用这个值。
+
+下一步应该实现用选中的indexPattern进行searchSource查询doc，但是使用courier（定义searchSource的库时总有angular报出的错误）。kibana的github上说他们正在对内部核心组件进行颠覆性更改，所以可以等7.0正式发布再继续调研。
